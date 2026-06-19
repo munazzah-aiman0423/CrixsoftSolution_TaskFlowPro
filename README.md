@@ -154,7 +154,7 @@ This project demonstrates:
 
 ## 👨‍💻 Author
 
-Developed as part of a Web Development Internship Project to showcase modern frontend development skills and productivity-focused application design.
+Developed by Munazzah Aiman as part of a Web Development Internship Project to showcase modern frontend development skills and productivity-focused application design.
 
 ---
 
