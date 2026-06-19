@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskFlow Pro v2</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Floating Background Blobs -->
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<div class="container">
+
+<!-- Header -->
+
+<header>
+
+<div class="logo-section">
+
+<h1>
+<i class="fas fa-list-check"></i>
+TaskFlow Pro
+</h1>
+
+<p id="taskSummary">
+Smart Productivity Dashboard
+</p>
+
+</div>
+
+<button id="themeToggle">
+🌙
+</button>
+
+</header>
+
+<!-- Progress Overview -->
+
+<section class="overview">
+
+<div class="progress-card glass">
+
+<h3>Overall Progress</h3>
+
+<div class="circle-progress">
+
+<div class="circle">
+
+<span id="circlePercentage">
+0%
+</span>
+
+</div>
+
+</div>
+
+<div class="progress-bar">
+
+<div id="progressFill">
+
+</div>
+
+</div>
+
+<p id="progressText">
+0% Completed
+</p>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-card glass">
+
+<i class="fas fa-list"></i>
+
+<h3>Total Tasks</h3>
+
+<span id="totalTasks">
+0
+</span>
+
+</div>
+
+<div class="stat-card glass">
+
+<i class="fas fa-check-circle"></i>
+
+<h3>Completed</h3>
+
+<span id="completedTasks">
+0
+</span>
+
+</div>
+
+<div class="stat-card glass">
+
+<i class="fas fa-clock"></i>
+
+<h3>Pending</h3>
+
+<span id="pendingTasks">
+0
+</span>
+
+</div>
+
+</section>
+
+<!-- Add Task -->
+
+<section class="task-form glass">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter task title...">
+
+<select id="category">
+
+<option value="Internship">
+Internship
+</option>
+
+<option value="Study">
+Study
+</option>
+
+<option value="Work">
+Work
+</option>
+
+<option value="Personal">
+Personal
+</option>
+
+</select>
+
+<select id="priority">
+
+<option value="High">
+High Priority
+</option>
+
+<option value="Medium">
+Medium Priority
+</option>
+
+<option value="Low">
+Low Priority
+</option>
+
+</select>
+
+<input
+type="date"
+id="dueDate">
+
+<button id="addTaskBtn">
+
+<i class="fas fa-plus"></i>
+
+Add Task
+
+</button>
+
+</section>
+
+<!-- Search -->
+
+<section class="search-section">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search tasks...">
+
+</section>
+
+<!-- Filters -->
+
+<section class="filters">
+
+<button
+class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="active">
+
+Active
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="completed">
+
+Completed
+
+</button>
+
+</section>
+
+<!-- Empty State -->
+
+<section
+id="emptyState"
+class="empty-state">
+
+<div>
+
+<h2>
+🎉
+</h2>
+
+<h3>
+🎉 All Tasks Completed
+</h3>
+
+<p>
+Time to celebrate your productivity!
+</p>
+
+</div>
+
+</section>
+
+<!-- Tasks -->
+
+<section
+id="taskList">
+
+</section>
+
+</div>
+
+<!-- Toast Notification -->
+
+<div id="toast">
+
+Task Added
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+TaskFlow Pro v2 • Modern Productivity Dashboard
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
